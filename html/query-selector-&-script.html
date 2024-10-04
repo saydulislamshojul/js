@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Query selector & Script</title>
+</head>
+<style>
+  #my-button{
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  border-radius: .7rem;
+  background-color: lightgreen;
+  font-weight: bold;
+  cursor: pointer;
+  }
+  #my-button2{
+    padding: 1rem 4rem;
+    border: 1px solid ;
+    border-radius: .7rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
+
+
+<body>
+  <h1 id="my-id" class="my-class">Query selector & Script</h1>
+
+  <button id="my-button" onclick="alert('Item has been added to cartlist')">Add to Cart</button>
+  <button id="my-button2" onclick="alert('Item move to wishlist')"> ❤️ Wishlist</button>
+  
+  <script>
+    // Query selector 
+
+    console.log(`In Javasript there are some methods to find or select an element like getElementByTagName, getElementById, getElementsByClassName, querySelector etc.
+    And script tag is Internal JS and onclick is Inline JS`);
+    
+      // getElementById method 
+    document.getElementById('my-id').innerText = 'Query selector & Script (manipulate by js)';
+
+      // getElementsByClassName method 
+    document.getElementsByClassName('my-class').innerText = 'hello world';
+
+      //query selector
+    document.body.querySelector('#my-id').innerText = 'hello'
+    document.querySelector('#my-id').innerText = 'Query selector & Script';
+
+    document.querySelector('.my-class').innerText = 'Query selector & Script';
+
+    document.querySelectorAll('.my-class').innerText='Query selector & Script'
+    
+
+    // Console Methods 
+    console.log('Normally Print on console');
+    console.warn('If wantted to print warning in console');
+    console.error('If wantted to show error in console');
+    // console.clear('If wantted to clear the console');
+    
+    
+    
+
+
+
+  </script>
+</body>
+</html>

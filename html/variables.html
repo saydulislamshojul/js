@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+</head>
+
+<style>
+   .my-button{
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  border-radius: .7rem;
+  background-color: lightgreen;
+  font-weight: bold;
+  cursor: pointer;
+  }
+  #my-button2{
+    padding: 1rem 4rem;
+    border: 1px solid ;
+    border-radius: .7rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1rem;
+  }
+</style>
+<body>
+  <h1>Variables</h1>
+
+
+  <button class="my-button" onclick="
+  addedItem++;
+  document.querySelector('#item-display').innerText = `Your bag has ${addedItem} items.`;
+  ">Add to Cart</button>
+
+  <button id="my-button2" onclick="addedItem--;
+  document.querySelector('#item-display').innerText = `Your bag has ${addedItem} items.`;"> Move to Wishlist</button>
+
+  <button class="my-button" onclick="
+  addedItem+=2;
+  document.querySelector('#item-display').innerText = `Your bag has ${addedItem} items.`;">Add 2 sale item</button>
+
+  <h1 id="item-display">Your Bag Has 0 Item</h1>
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    let addedItem = 0;
+    document.querySelector('#item-display').innerText = `Your bag has ${addedItem} items.`;
+
+
+
+
+
+    console.log(`
+    Variables are Containers for Storing Data.
+    There are 3 way to define Variables. 
+    1 is var (old way), 2 is let & 3 is const.
+    And also can be update variables values`);
+
+    //defining variable by var. It's not follow the scope rule and in var variable name can be redefined so it is so confusing matter.
+    var num = 3;
+    num+=9;
+    console.log(num);
+    var num = 28;
+    console.log(num);
+
+    // defining varibale by let (It use when we need to update variable values)
+    let number = 3; // defining
+    number *= 7; // updating
+    console.log(number);
+    
+    // defining variable by const (It use when we need to constent a value)
+    const numbers = 23;
+    console.log(numbers);
+   
+    // Bag Exercise
+
+    
+    
+    
+  </script>
+</body>
+</html>

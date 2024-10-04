@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numbers & Strings</title>
+</head>
+<body>
+  <h1>Numbers & Strings</h1>
+  
+  <script>
+    // String data type
+    console.log('String is a data type which used hold textual data. It can be single letter to paragraph And it can be define in 3 ways ' + '1. single quotes, ' + "2. double quotes & " + `3. backticks`);
+    console.log(`By using backticks we can easily write multiple line and use other values in it by using ` + '${}' + ` this. `);
+    
+    
+
+    // Numbers data type
+      // There are two types of numbers 1. Integers number and 2. Floats numbers
+    console.log('Without Decimal point all number are Integers numbers ', +  0,1, 2, 0, -1,-2);
+    console.log('Which numbers has decimal point are Float numbers ',+ 3.5, -2.5, 4.1, 9.2);
+    
+
+    // arithmetic operators
+    console.log(3+5); // Addition
+    console.log(3-5); // Subtraction
+    console.log(3*5); // Multiplication
+    console.log(3/5); // Division
+    console.log(7%3); //Modulus or Remainder
+
+    // TypeOf operator to check the data type
+    console.log(typeof 3);
+    console.log(typeof 'data');
+    
+    // Practice Exercise is start
+        // At a restaurant you ate: 1 Dal ₹ 100, 2 Roti ₹10 each, 1 Ice Cream ₹30, calculate and display the final bill amount. ( practice number 1 )
+
+    console.log('Your final bill is : ' + ((1*100) + (2*10) + (1*30)) + 'TK');
+
+
+    // Calculate 18% GST on iPhone15 ₹79,990 and 2 Air pods Pro ₹24990 each. ( practice number 2 )
+    console.log('The 18% GST on These products are = ' + (79990 + (2*24990)) * 18/100 + 'TK') ;
+    
+    // Display order summary in a popup ( practice number 3 )
+    alert(`Your final bill is : ${((1*100) + (2*10) + (1*30)) + 'TK'}`)
+
+  </script>
+</body>
+</html>
